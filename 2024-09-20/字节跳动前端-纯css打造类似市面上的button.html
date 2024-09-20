@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Button</title>
+    <style>
+        /* 基础按钮样式 */
+        .button {
+            display: inline-block;/* 行内块元素 inline-block指的是内联元素，可以设置宽高，可以设置margin和padding，但是不会独占一行 */
+            padding: 12px 24px;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(45deg, #a146c0, #214ac5);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease; /* 平滑过渡效果 */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 阴影 */
+        }
+
+        /* 悬停时的效果 */
+        .button:hover {
+            background: linear-gradient(45deg, #6e2f84, #294ebe); /* 悬停时背景渐变 */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* 阴影增强 */
+            transform: translateY(-3px); /* 悬停时微微上移 */
+        }
+
+        /* 按钮的按下效果 */
+        .button:active {
+            background: linear-gradient(45deg, #4823a8, #6e2f84); /* 按下时背景颜色 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 按下时阴影减弱 */
+            transform: translateY(1px); /* 按下时微微下移 */
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click Me</button>
+</body>
+</html>
